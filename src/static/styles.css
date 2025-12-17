@@ -154,14 +154,17 @@ footer {
 }
 
 .participants ul {
-  list-style: disc inside;
+  list-style: none;
   max-height: 120px;
   overflow: auto;
-  padding-left: 12px;
+  padding-left: 0;
   margin: 0;
 }
 
 .participants li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background: linear-gradient(180deg, #ffffff, #f7f9ff);
   border: 1px solid #e6e9ff;
   padding: 6px 8px;
@@ -169,6 +172,24 @@ footer {
   border-radius: 6px;
   font-size: 14px;
   color: #333;
+}
+
+.participant-email {
+  word-break: break-word;
+}
+
+.remove-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.remove-btn:hover {
+  background: rgba(198, 40, 40, 0.08);
 }
 
 .no-participants {
